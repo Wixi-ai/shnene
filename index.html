@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ШНЕЙНЕ ГОША | Официальный магазин одежды</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Навигация -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">ШНЕЙНЕ ГОША</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Каталог</a></li>
+        <li><a href="#about">О бренде</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+      <a href="cart.html" class="cart-btn">
+        🛒 Корзина <span class="cart-count">0</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Герой секция -->
+  <section class="hero">
+    <div class="container">
+      <h1>ШНЕЙНЕ ГОША</h1>
+      <p>Уличная одежда премиум-класса. Сделано в ограниченном количестве.</p>
+      <a href="#catalog" class="btn">Смотреть коллекцию</a>
+    </div>
+  </section>
+
+  <!-- Каталог товаров -->
+  <section id="catalog" class="catalog">
+    <div class="container">
+      <h2>Каталог</h2>
+      <div class="filters">
+        <button class="filter-btn active" data-category="all">Все</button>
+        <button class="filter-btn" data-category="hoodies">Худи</button>
+        <button class="filter-btn" data-category="tshirts">Футболки</button>
+        <button class="filter-btn" data-category="pants">Штаны</button>
+        <button class="filter-btn" data-category="accessories">Аксессуары</button>
+      </div>
+
+      <div class="products-grid" id="products-grid">
+        <!-- Товары будут загружаться через JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- О бренде -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>О бренде ШНЕЙНЕ ГОША</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>ШНЕЙНЕ ГОША — это уличный бренд одежды, основанный в 2025 году. Мы создаем одежду для тех, кто ценит
+            комфорт и уникальный стиль. Каждая вещь проходит строгий контроль качества и выпускается ограниченным
+            тиражом.</p>
+          <p>Наша философия: быть собой, не бояться выделяться и носить то, что действительно нравится.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">довольных клиентов</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">уникальных моделей</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">поддержка</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Контакты</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p>📞 +7 (999) 123-45-67</p>
+          <p>✉️ info@shneyne-gosha.ru</p>
+          <p>📍 Москва, ул. Тверская, 15</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <input type="text" placeholder="Ваше имя" required>
+          <input type="email" placeholder="Ваш email" required>
+          <textarea placeholder="Ваше сообщение" rows="4" required></textarea>
+          <button type="submit" class="btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 ШНЕЙНЕ ГОША. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
